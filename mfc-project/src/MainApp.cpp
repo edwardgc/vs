@@ -62,7 +62,7 @@ void MyFrame::OnChar(UINT key, UINT, UINT)
 
     CString str;
 
-    str.Format(TEXT("按下了 % c键"), key);
+    str.Format(TEXT("输入 %c"), key);
 
     MessageBox(str);
 }
