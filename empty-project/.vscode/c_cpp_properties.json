@@ -5,7 +5,7 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/build/googletest-src/googletest/include",
-                "${workspaceFolder}/build/googletest-src/googletest/include"
+                "${workspaceFolder}/build/googletest-src/googlemock/include"
             ],
             "defines": [
                 "_DEBUG",

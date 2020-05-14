@@ -33,7 +33,7 @@ add_subdirectory(${CMAKE_CURRENT_BINARY_DIR}/googletest-src
 
 # 兼容CMake2.8.11以前的版本
 if (CMAKE_VERSION VERSION_LESS 2.8.11)
-  include_directories("${gtest_SOURCE_DIR}/include")
+  include_directories("${gtest_SOURCE_DIR}/include" "${gmock_SOURCE_DIR}/include")
 endif()
 
 
@@ -48,4 +48,4 @@ target_link_libraries(${PROJECT_NAME} ${PROJECT_NAME}_lib)
 # 添加测试程序
 set(TEST_SOURCE test/Test.cpp)
 add_executable(${PROJECT_NAME}-test ${LIB_SRC} ${TEST_SOURCE})
-target_link_libraries(${PROJECT_NAME}-test gtest_main)
+target_link_libraries(${PROJECT_NAME}-test gtest gmock_main)
